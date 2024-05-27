@@ -1,0 +1,33 @@
+.tile {
+  position: relative;
+}
+
+.tile img {
+  display: block;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+}
+
+/* The front of the tile */
+.tile .front {
+  transform: rotateY(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+
+/* The back of the tile */
+.tile .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
